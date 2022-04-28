@@ -3,6 +3,7 @@
 // April 28th 2022
 
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -10,6 +11,10 @@ template <typename H>
 
 H half(H num) {
 	return (num / 2);
+}
+
+int half(int num) {
+	return round(static_cast<float>(num / static_cast<float>(2)));
 }
 
 int main() {
